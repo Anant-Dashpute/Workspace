@@ -3,21 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Website</title>
+    <title>Workspace</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">My Blog</a>
-    </nav>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2 class="text-center text-light">Workspace</h2>
+        <a href="index.html">Blogs</a>
+        <a href="concepts.html">Concepts</a>
+        <a href="research-papers.html">Research Papers</a>
+        <a href="projects.html">Projects</a>
+    </div>
 
-    <div class="container mt-5">
-        <div class="row" id="blogPosts">
-            <!-- Blog posts will be loaded here -->
+    <!-- Main Content -->
+    <div class="content">
+        <div class="container mt-5">
+            <h1>AI Blogs</h1>
+            <div class="row" id="contentPosts">
+                <!-- Blog posts will be loaded here -->
+            </div>
         </div>
     </div>
 
     <script src="script.js"></script>
+    <script>loadContent('blogs');</script>  <!-- Load blogs on landing page -->
 </body>
 </html>
