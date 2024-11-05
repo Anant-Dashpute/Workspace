@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title> <!-- Change title accordingly -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2 class="text-center text-light">Workspace</h2>
+        <a href="index.html">Blogs</a>
+        <a href="concepts.html">Concepts</a>
+        <a href="research-papers.html">Research Papers</a>
+        <a href="projects.html">Projects</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <div class="container mt-5">
+            <h1>Projects</h1>  <!-- Change title accordingly -->
+            <div class="row" id="contentPosts">
+                <!-- Content posts will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>loadContent('projects');</script>  <!-- Load relevant content for each page -->
+</body>
+</html>
