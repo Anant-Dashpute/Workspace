@@ -1,8 +1,9 @@
-// Function to read blog files from the `blogs/` directory and load them into the page
+// Function to load blog data from the blogs directory on GitHub repository
 async function loadBlogs() {
     const blogList = document.getElementById("blog-list");
     const blogContainer = document.getElementById("blog-container");
 
+    // Fetch all blog files (Markdown) from the `blogs/` folder using GitHub's raw content URL
     const blogs = await fetchBlogsFromServer();
 
     // Dynamically create blog topics list in sidebar
@@ -24,27 +25,32 @@ async function loadBlogs() {
     }
 }
 
-// Simulate fetching blogs from a server or static files
+// Function to fetch blogs from GitHub using the raw URL of Markdown files
 async function fetchBlogsFromServer() {
-    // Sample blog content, in a real application, this could be fetched from an API or a static folder
-    return [
-        {
-            title: "AI and the Future of Automation",
-            content: `
-                <h1>AI and the Future of Automation</h1>
-                <p>The rise of Artificial Intelligence (AI) has been transforming industries across the globe. In particular, automation is one of the most promising areas where AI can drive significant advancements...</p>
-                <img src="assets/example.jpg" alt="AI Automation">
-            `
-        },
-        {
-            title: "Current AI Trends in Healthcare",
-            content: `
-                <h1>Current AI Trends in Healthcare</h1>
-                <p>AI is playing an increasingly pivotal role in the healthcare industry. From predictive diagnostics to personalized treatments, AI-powered systems are revolutionizing how healthcare professionals deliver care...</p>
-                <img src="assets/example.jpg" alt="AI in Healthcare">
-            `
-        }
+    // GitHub repository's raw URL
+    const rawGitHubURL = "https://raw.githubusercontent.com/your-username/your-repo/main/blogs/";
+
+    // List of blogs (you can add more files here)
+    const blogFiles = [
+        "blog1.md",
+        "blog2.md"
     ];
+
+    const blogs = [];
+
+    for (const file of blogFiles) {
+        const response = await fetch(rawGitHubURL + file);
+        const markdownContent = await response.text();
+        const htmlContent = marked(markdownContent); // Convert markdown to HTML using marked.js
+
+        // Push the blog data with title and HTML content
+        blogs.push({
+            title: file.replace('.md', '').replace(/-/g, ' '),  // File name as title
+            content: htmlContent
+        });
+    }
+
+    return blogs;
 }
 
 // Initialize blog loading when the page loads
