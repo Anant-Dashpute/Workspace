@@ -10,3 +10,8 @@ body {
     font-size: 1.5rem;
     color: #333;
 }
+
+.card-img-top {
+    height: 150px;
+    object-fit: cover;
+}
