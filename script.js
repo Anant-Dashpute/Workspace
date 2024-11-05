@@ -1,10 +1,10 @@
-// Function to load blog posts from JSON files in the 'blogs' directory
-async function loadBlogs() {
-    const blogPostsContainer = document.getElementById("blogPosts");
-    let blogIndex = 1;
+// Function to load content from JSON files in specified directory
+async function loadContent(type) {
+    const contentContainer = document.getElementById("contentPosts");
+    let fileIndex = 1;
 
     while (true) {
-        const filePath = `blogs/blog${blogIndex}.json`;
+        const filePath = `${type}/post${fileIndex}.json`;
         
         try {
             const response = await fetch(filePath);
@@ -13,32 +13,29 @@ async function loadBlogs() {
                 break;  // Stop if the file does not exist (404 error)
             }
 
-            const blog = await response.json();
+            const post = await response.json();
 
-            // Create blog card element
-            const blogCard = document.createElement("div");
-            blogCard.className = "col-md-4";
-            blogCard.innerHTML = `
+            // Create content card element
+            const contentCard = document.createElement("div");
+            contentCard.className = "col-md-4";
+            contentCard.innerHTML = `
                 <div class="card">
-                    <img src="${blog.image}" class="card-img-top" alt="Blog Image">
+                    <img src="${post.image}" class="card-img-top" alt="Image">
                     <div class="card-body">
-                        <h5 class="card-title">${blog.title}</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">${blog.date}</h6>
-                        <p class="card-text">${blog.objective}</p>
-                        <p class="card-text">${blog.content}</p>
+                        <h5 class="card-title">${post.title}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">${post.date}</h6>
+                        <p class="card-text">${post.objective}</p>
+                        <p class="card-text">${post.content}</p>
                     </div>
                 </div>
             `;
 
-            // Append blog card to container
-            blogPostsContainer.appendChild(blogCard);
-            blogIndex++;  // Increment to the next blog file
+            // Append content card to container
+            contentContainer.appendChild(contentCard);
+            fileIndex++;  // Increment to the next file
         } catch (error) {
-            console.error("Error loading blog:", filePath, error);
+            console.error("Error loading content:", filePath, error);
             break;
         }
     }
 }
-
-// Load blogs on page load
-document.addEventListener("DOMContentLoaded", loadBlogs);
