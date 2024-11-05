@@ -2,6 +2,30 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.sidebar {
+    width: 200px;
+    position: fixed;
+    height: 100%;
+    background-color: #343a40;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar a:hover {
+    background-color: #495057;
+}
+
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
 .card {
     margin-bottom: 20px;
 }
