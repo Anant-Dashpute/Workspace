@@ -1,14 +1,18 @@
-// Function to load blog posts from JSON files in 'blogs' directory
+// Function to load blog posts from JSON files in the 'blogs' directory
 async function loadBlogs() {
     const blogPostsContainer = document.getElementById("blogPosts");
+    let blogIndex = 1;
 
-    // Array of blog filenames
-    const blogFiles = ["blogs/blog1.json", "blogs/blog2.json", "blogs/blog3.json"];  // Add more as needed
-
-    for (let file of blogFiles) {
+    while (true) {
+        const filePath = `blogs/blog${blogIndex}.json`;
+        
         try {
-            // Fetch each blog file and parse the content
-            const response = await fetch(file);
+            const response = await fetch(filePath);
+
+            if (!response.ok) {
+                break;  // Stop if the file does not exist (404 error)
+            }
+
             const blog = await response.json();
 
             // Create blog card element
@@ -28,8 +32,10 @@ async function loadBlogs() {
 
             // Append blog card to container
             blogPostsContainer.appendChild(blogCard);
+            blogIndex++;  // Increment to the next blog file
         } catch (error) {
-            console.error("Error loading blog:", file, error);
+            console.error("Error loading blog:", filePath, error);
+            break;
         }
     }
 }
