@@ -1,41 +1,193 @@
+/* Global Styling */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
 }
 
+.container {
+    max-width: 100%;
+    padding: 20px;
+}
+
+/* Sidebar Styling */
 .sidebar {
-    width: 200px;
+    width: 220px;
     position: fixed;
     height: 100%;
     background-color: #343a40;
     padding-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+.sidebar h2 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
 }
 
 .sidebar a {
-    color: white;
-    padding: 10px 15px;
+    color: #ffffff;
+    padding: 12px 20px;
     text-decoration: none;
     display: block;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, padding-left 0.3s ease;
 }
 
 .sidebar a:hover {
     background-color: #495057;
+    padding-left: 30px;
 }
 
+.sidebar-hidden {
+    transform: translateX(-220px);
+}
+
+/* Main Content Area */
 .content {
-    margin-left: 220px;
+    margin-left: 240px;
     padding: 20px;
+    transition: margin-left 0.3s ease;
 }
 
+/* Card Styling */
 .card {
     margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, max-height 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-body {
+    padding: 15px;
 }
 
 .card-title {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: #333;
+    margin-bottom: 5px;
 }
 
-.card-img-top {
-    height: 150px;
-    object-fit: cover;
+.card-text {
+    font-size: 1rem;
+    color: #666;
+    overflow: hidden;
+    max-height: 4.5rem;
+    transition: max-height 0.4s ease;
+}
+
+.card.expand .card-text {
+    max-height: none;
+}
+
+.card-footer {
+    background: #f8f9fa;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    padding: 8px;
+    cursor: pointer;
+    color: #007bff;
+}
+
+.card-footer:hover {
+    text-decoration: underline;
+}
+
+/* Button to Toggle Sidebar */
+.toggle-btn {
+    display: none;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #343a40;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.toggle-btn:focus {
+    outline: none;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    /* Sidebar */
+    .sidebar {
+        position: absolute;
+        transform: translateX(-220px);
+        z-index: 10;
+    }
+    
+    /* Toggle Button */
+    .toggle-btn {
+        display: block;
+    }
+    
+    /* Main Content */
+    .content {
+        margin-left: 0;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Cards */
+    .card {
+        margin-bottom: 15px;
+    }
+    
+    /* Sidebar Text */
+    .sidebar a {
+        font-size: 1rem;
+    }
+}
+
+/* Navbar Animation */
+.sidebar a {
+    transition: padding 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover Effect */
+.sidebar a:hover {
+    padding-left: 30px;
+    background-color: #495057;
+}
+
+/* Card Expansion */
+.card.expand {
+    max-height: none;
+    cursor: pointer;
+}
+
+.card-footer {
+    background: #f1f1f1;
+    color: #007bff;
+    font-size: 0.9rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Animation for Card Expansion */
+.card.expand .card-footer {
+    color: #dc3545;
 }
