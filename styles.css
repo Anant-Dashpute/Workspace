@@ -4,6 +4,7 @@ body {
     background-color: #f8f9fa;
     margin: 0;
     padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .container {
@@ -13,12 +14,14 @@ body {
 
 /* Sidebar Styling */
 .sidebar {
-    width: 220px;
+    width: 250px;
     position: fixed;
     height: 100%;
     background-color: #343a40;
-    padding-top: 20px;
+    padding-top: 60px;
+    color: white;
     transition: transform 0.3s ease;
+    z-index: 1000; /* Ensure sidebar is on top */
 }
 
 .sidebar h2 {
@@ -42,18 +45,18 @@ body {
     padding-left: 30px;
 }
 
+/* Sidebar Hidden State */
 .sidebar-hidden {
-    transform: translateX(-220px);
+    transform: translateX(-250px);
 }
 
-/* Main Content Area */
+/* Main Content Styling */
 .content {
-    margin-left: 240px;
+    margin-left: 250px; /* Adjust this if sidebar width changes */
     padding: 20px;
     transition: margin-left 0.3s ease;
 }
 
-/* Card Styling */
 /* Card Styling */
 .card {
     margin-bottom: 20px;
@@ -85,7 +88,6 @@ body {
     transition: max-height 0.5s ease;
 }
 
-
 .card img {
     height: 150px;
     width: 100%;
@@ -94,15 +96,11 @@ body {
     border-top-right-radius: 8px;
 }
 
-
-
 .card-title {
     font-size: 1.4rem;
     color: #333;
     margin-bottom: 5px;
 }
-
-
 
 .card-footer {
     background: #f8f9fa;
@@ -118,7 +116,6 @@ body {
 }
 
 /* Button to Toggle Sidebar */
-/* Fixed positioning for toggle button */
 .toggle-btn {
     position: fixed;
     top: 15px;
@@ -128,54 +125,45 @@ body {
     padding: 8px 12px;
     color: white;
     cursor: pointer;
-    z-index: 1000;
+    z-index: 1001; /* Make sure the toggle button is above everything else */
 }
 
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-/* Optional: Sidebar styling */
-.sidebar {
-    width: 250px;
-    height: 100%;
-    background-color: #343a40;
-    position: fixed;
-    left: 0;
-    top: 0;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    color: white;
-    padding-top: 60px;
+/* Sidebar and Content Adjustment for Toggling */
+.sidebar.active {
+    transform: translateX(0);
 }
 
-.content {
-    margin-left: 260px; /* Adjust this if sidebar width changes */
+.content.maximized {
+    margin-left: 0;
 }
-.sidebar-hidden {
-    transform: translateX(-250px);
-    transition: transform 0.3s ease;
-}
-
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     /* Sidebar */
     .sidebar {
         position: absolute;
-        transform: translateX(-220px);
+        transform: translateX(-250px);
         z-index: 10;
     }
-    
+
     /* Toggle Button */
     .toggle-btn {
         display: block;
     }
-    
+
     /* Main Content */
     .content {
         margin-left: 0;
         padding: 15px;
+    }
+
+    /* Card adjustments */
+    .card {
+        margin-bottom: 15px;
     }
 }
 
@@ -184,7 +172,7 @@ body {
     .card {
         margin-bottom: 15px;
     }
-    
+
     /* Sidebar Text */
     .sidebar a {
         font-size: 1rem;
@@ -196,7 +184,6 @@ body {
     transition: padding 0.3s ease, background-color 0.3s ease;
 }
 
-/* Hover Effect */
 .sidebar a:hover {
     padding-left: 30px;
     background-color: #495057;
@@ -219,4 +206,14 @@ body {
 /* Animation for Card Expansion */
 .card.expand .card-footer {
     color: #dc3545;
+}
+
+/* Optional: Smooth transition for hiding sidebar and expanding content */
+@keyframes slideIn {
+    from {
+        transform: translateX(-250px);
+    }
+    to {
+        transform: translateX(0);
+    }
 }
