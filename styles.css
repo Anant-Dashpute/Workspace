@@ -54,6 +54,7 @@ body {
 }
 
 /* Card Styling */
+/* Card Styling */
 .card {
     margin-bottom: 20px;
     border: none;
@@ -67,22 +68,8 @@ body {
     transform: scale(1.02);
 }
 
-.card img {
-    height: 150px;
-    width: 100%;
-    object-fit: cover;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-}
-
 .card-body {
     padding: 15px;
-}
-
-.card-title {
-    font-size: 1.4rem;
-    color: #333;
-    margin-bottom: 5px;
 }
 
 .card-text {
@@ -94,8 +81,28 @@ body {
 }
 
 .card.expand .card-text {
-    max-height: none;
+    max-height: 1000px; /* Ensure expanded height */
+    transition: max-height 0.5s ease;
 }
+
+
+.card img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+
+
+.card-title {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+
 
 .card-footer {
     background: #f8f9fa;
