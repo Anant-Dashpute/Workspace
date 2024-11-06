@@ -47,3 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+function toggleSidebar() {
+    document.querySelector(".sidebar").classList.toggle("sidebar-hidden");
+}
