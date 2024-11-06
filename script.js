@@ -3,9 +3,12 @@ async function loadContent(type) {
     const contentContainer = document.getElementById("contentPosts");
     let fileIndex = 1;
 
+    // Clear previous content
+    contentContainer.innerHTML = "";
+
     while (true) {
         const filePath = `${type}/post${fileIndex}.json`;
-        
+
         try {
             const response = await fetch(filePath);
 
@@ -17,7 +20,7 @@ async function loadContent(type) {
 
             // Create content card element
             const contentCard = document.createElement("div");
-            contentCard.className = "col-md-4";
+            contentCard.className = "col-md-4 mb-3";
             contentCard.innerHTML = `
                 <div class="card">
                     <img src="${post.image}" class="card-img-top" alt="Image">
@@ -27,6 +30,9 @@ async function loadContent(type) {
                         <p class="card-text">${post.objective}</p>
                         <p class="card-text">${post.content}</p>
                     </div>
+                    <div class="card-footer text-center">
+                        Read More
+                    </div>
                 </div>
             `;
 
@@ -35,18 +41,24 @@ async function loadContent(type) {
             fileIndex++;  // Increment to the next file
         } catch (error) {
             console.error("Error loading content:", filePath, error);
-            break;
+            break;  // Stop loading further content on error
         }
     }
 }
 
-
-
+// Toggle sidebar visibility
 function toggleSidebar() {
     document.querySelector(".sidebar").classList.toggle("sidebar-hidden");
+    document.querySelector(".content").classList.toggle("maximized");  // Maximize content when sidebar is hidden
 }
 
+// Expand and collapse cards when clicked
 document.addEventListener("DOMContentLoaded", () => {
+    // Load the content for the specified page (either blogs, concepts, etc.)
+    const pageType = document.body.getAttribute('data-page-type');
+    loadContent(pageType);
+
+    // Add event listeners to each card for expanding/collapsing
     document.querySelectorAll(".card").forEach(card => {
         card.addEventListener("click", () => {
             card.classList.toggle("expand");
