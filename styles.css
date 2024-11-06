@@ -118,19 +118,40 @@ body {
 }
 
 /* Button to Toggle Sidebar */
+/* Fixed positioning for toggle button */
 .toggle-btn {
-    display: block;
     position: fixed;
     top: 15px;
     left: 15px;
     background-color: #343a40;
     border: none;
-    color: white;
     padding: 8px 12px;
+    color: white;
     cursor: pointer;
     z-index: 1000;
 }
 
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Optional: Sidebar styling */
+.sidebar {
+    width: 250px;
+    height: 100%;
+    background-color: #343a40;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    color: white;
+    padding-top: 60px;
+}
+
+.content {
+    margin-left: 260px; /* Adjust this if sidebar width changes */
+}
 .sidebar-hidden {
     transform: translateX(-250px);
     transition: transform 0.3s ease;
