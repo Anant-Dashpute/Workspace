@@ -112,8 +112,8 @@ body {
 
 /* Button to Toggle Sidebar */
 .toggle-btn {
-    display: none;
-    position: absolute;
+    display: block;
+    position: fixed;
     top: 15px;
     left: 15px;
     background-color: #343a40;
@@ -122,12 +122,13 @@ body {
     padding: 8px 12px;
     cursor: pointer;
     z-index: 1000;
+}
+
+.sidebar-hidden {
+    transform: translateX(-250px);
     transition: transform 0.3s ease;
 }
 
-.toggle-btn:focus {
-    outline: none;
-}
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
