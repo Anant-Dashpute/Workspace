@@ -40,6 +40,12 @@ async function loadContent(type) {
     }
 }
 
+
+
+function toggleSidebar() {
+    document.querySelector(".sidebar").classList.toggle("sidebar-hidden");
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".card").forEach(card => {
         card.addEventListener("click", () => {
@@ -47,7 +53,3 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
-
-function toggleSidebar() {
-    document.querySelector(".sidebar").classList.toggle("sidebar-hidden");
-}
