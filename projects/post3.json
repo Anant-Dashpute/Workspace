@@ -1,0 +1,7 @@
+{
+    "title": "Reinforcement Learning: Learning Through Trial and Error",
+    "image": "https://via.placeholder.com/150",
+    "objective": "A look at how reinforcement learning trains agents to make decisions through rewards and punishments.",
+    "content": "Reinforcement Learning (RL) is an area of machine learning where agents learn by interacting with an environment, receiving rewards or penalties based on their actions. Over time, they learn strategies to maximize cumulative rewards. RL is used in robotics, game AI, and autonomous systems. Famous examples include AlphaGo and other AI systems that learn complex games and strategies through RL, showcasing its potential in decision-making applications.",
+    "date": "November 10, 2024"
+}

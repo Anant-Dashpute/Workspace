@@ -1,0 +1,7 @@
+{
+    "title": "Deep Learning: Mimicking the Human Brain",
+    "image": "https://via.placeholder.com/150",
+    "objective": "An introduction to deep learning, a specialized branch of machine learning inspired by the human brain.",
+    "content": "Deep Learning is a subfield of machine learning that uses neural networks with many layers to analyze various forms of data. Inspired by the structure of the human brain, these artificial neural networks (ANNs) can learn complex patterns from large datasets. Deep learning excels in tasks like image recognition, natural language processing, and even complex problem-solving, making it one of the most powerful techniques in AI today.",
+    "date": "November 7, 2024"
+}
