@@ -47,7 +47,7 @@ body {
 
 /* Sidebar Hidden State */
 .sidebar-hidden {
-    transform: translateX(-250px);
+    transform: translateX(-250px); /* Hide sidebar */
 }
 
 /* Main Content Styling */
@@ -134,11 +134,11 @@ body {
 
 /* Sidebar and Content Adjustment for Toggling */
 .sidebar.active {
-    transform: translateX(0);
+    transform: translateX(0); /* When the sidebar is active, it slides in */
 }
 
 .content.maximized {
-    margin-left: 0;
+    margin-left: 0; /* Content maximized to full width when sidebar is hidden */
 }
 
 /* Media Queries for Responsiveness */
@@ -146,27 +146,28 @@ body {
     /* Sidebar */
     .sidebar {
         position: absolute;
-        transform: translateX(-250px);
+        transform: translateX(-250px); /* Initially hide the sidebar off-screen */
         z-index: 10;
     }
 
     /* Toggle Button */
     .toggle-btn {
-        display: block;
+        display: block; /* Show the toggle button on smaller screens */
     }
 
     /* Main Content */
     .content {
-        margin-left: 0;
+        margin-left: 0; /* Content takes full width when sidebar is off-screen */
         padding: 15px;
     }
 
-    /* Card adjustments */
+    /* Adjust card margins on mobile */
     .card {
         margin-bottom: 15px;
     }
 }
 
+/* For very small screens (max-width: 576px) */
 @media (max-width: 576px) {
     /* Cards */
     .card {
