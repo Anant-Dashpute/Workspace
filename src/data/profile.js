@@ -13,6 +13,7 @@ export const profile = {
         "perception, published in the SAE Technical Paper Series. I care about grounded, measurable engineering " +
         "decisions over hype.",
     skills: [
+        "Python Automation",
         "Cloud Architecture",
         "Compute Selection & Sizing",
         "Cost Optimization",
@@ -23,6 +24,7 @@ export const profile = {
     techStack: [
         "AWS",
         "GCP",
+        "Python",
         "Kubernetes",
         "Docker",
         "Python",
@@ -32,13 +34,16 @@ export const profile = {
     ],
     interests: [
         "Cloud Economics",
-        "Autonomous Perception",
+        "Autonomous and Space-based Perception",
         "Distributed Systems",
         "Applied Research",
-        "Reading",
+        "Robotics",
     ],
     contact: {
-        email: "hello@example.com",
+        email: "anantdashpute@gmail.com",
+        insta: "https://www.instagram.com/anant.dashpute/",
+        linkedin: "https://www.linkedin.com/in/anant-dashpute/",
+        github: "https://github.com/anant-dashpute",
         location: "Bengaluru, India",
     },
 };
