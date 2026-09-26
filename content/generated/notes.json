@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "kubernetes-basics",
+    "title": "Kubernetes Basics",
+    "date": "2025-06-01",
+    "category": "DevOps",
+    "tags": [],
+    "image": "",
+    "thumbnail": "",
+    "file": "notes/kubernetes-basics.pdf",
+    "description": "Introduction to Kubernetes concepts: pods, deployments, and services. Kubernetes is a container orchestration platform. A Pod is the smallest deployable unit…",
+    "bodyHtml": "<p>Introduction to Kubernetes concepts: pods, deployments, and services.</p>\n<p>Kubernetes is a container orchestration platform. A <strong>Pod</strong> is the smallest deployable unit, a <strong>Deployment</strong> manages replicas and rollouts, and a <strong>Service</strong> exposes pods on a stable network endpoint.</p>\n<ul><li>Pods share network namespace and storage</li><li>Deployments handle rolling updates and self-healing</li><li>Services provide load balancing across pods</li></ul>"
+  },
+  {
+    "slug": "system-design-primer",
+    "title": "System Design Primer",
+    "date": "2025-04-12",
+    "category": "System Design",
+    "tags": [],
+    "image": "",
+    "thumbnail": "",
+    "file": "notes/system-design-primer.pdf",
+    "description": "Notes on scalability, caching, load balancing, and database design. Good system design balances latency, throughput, and consistency.",
+    "bodyHtml": "<p>Notes on scalability, caching, load balancing, and database design.</p>\n<p>Good system design balances <strong>latency</strong>, <strong>throughput</strong>, and <strong>consistency</strong>.</p>\n<ul><li>Cache reads with a CDN or in-memory store (Redis)</li><li>Use load balancers to distribute traffic across replicas</li><li>Choose between SQL and NoSQL based on access patterns, not hype</li></ul>"
+  },
+  {
+    "slug": "python-async-patterns",
+    "title": "Python Async Patterns",
+    "date": "2025-02-20",
+    "category": "Programming",
+    "tags": [],
+    "image": "",
+    "thumbnail": "",
+    "file": "notes/python-async-patterns.pdf",
+    "description": "Practical patterns for asyncio, coroutines, and concurrency in Python. asyncio lets you run many I/O-bound tasks concurrently on a single thread.",
+    "bodyHtml": "<p>Practical patterns for asyncio, coroutines, and concurrency in Python.</p>\n<p><code>asyncio</code> lets you run many I/O-bound tasks concurrently on a single thread.</p>\n<ul><li>Use <code>asyncio.gather</code> to run coroutines concurrently</li><li>Avoid blocking calls inside async functions</li><li>Prefer <code>async with</code> for connection pools and clients</li></ul>"
+  },
+  {
+    "slug": "ml-cheat-sheet",
+    "title": "Machine Learning Cheat Sheet",
+    "date": "2025-01-05",
+    "category": "AI & ML",
+    "tags": [],
+    "image": "",
+    "thumbnail": "",
+    "file": "notes/ml-cheat-sheet.pdf",
+    "description": "Quick reference for common ML algorithms, metrics, and workflows.",
+    "bodyHtml": "<p>Quick reference for common ML algorithms, metrics, and workflows.</p>\n<ul><li>Classification: logistic regression, random forest, gradient boosting</li><li>Metrics: precision, recall, F1, ROC-AUC</li><li>Always split train/validation/test before tuning hyperparameters</li></ul>"
+  }
+]

@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Workspace — Research Papers</title>
+    <title>Workspace — Notes</title>
+    <meta name="description" content="Downloadable notes and reference material." />
     <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#0071e3" />
     <link rel="apple-touch-icon" href="logo.jpg" />
@@ -12,19 +13,23 @@
     <link rel="stylesheet" href="src/styles/main.css" />
 </head>
 
-<body data-page-type="research-papers" data-page-id="research">
+<body>
     <header id="app-header"></header>
 
     <main class="page">
         <section class="section" style="margin-top: var(--space-5)">
-            <h1 class="section-title">Research Papers</h1>
-            <div id="content-grid" class="grid"></div>
+            <h1 class="section-title">Notes</h1>
+            <p class="section-text">A small library of notes on topics I've studied — searchable, filterable, and
+                downloadable as PDF where available.</p>
+            <input id="notes-search" class="search-input" type="search" placeholder="Search notes…" />
+            <div id="notes-filters"></div>
+            <div id="notes-grid" class="grid"></div>
         </section>
     </main>
 
     <footer id="app-footer"></footer>
 
-    <script type="module" src="src/pages/content-page.js"></script>
+    <script type="module" src="src/pages/notes-page.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,38 @@
+[
+    {
+        "slug": "deep-learning",
+        "title": "Deep Learning, Briefly",
+        "date": "2024-11-07",
+        "category": "",
+        "tags": [],
+        "image": "",
+        "thumbnail": "",
+        "file": "",
+        "description": "Neural networks with many layers, inspired by the brain. Deep learning uses layered neural networks to learn complex patterns from large datasets.",
+        "bodyHtml": "<p>Neural networks with many layers, inspired by the brain.</p>\n<p>Deep learning uses layered neural networks to learn complex patterns from large datasets. It excels at image recognition, natural language processing, and sequence modeling.</p>\n<ul><li>Convolutional networks: spatial data (images)</li><li>Recurrent / transformer networks: sequential data (text, audio)</li></ul>"
+    },
+    {
+        "slug": "nlp",
+        "title": "Natural Language Processing",
+        "date": "2024-11-08",
+        "category": "",
+        "tags": [],
+        "image": "",
+        "thumbnail": "",
+        "file": "",
+        "description": "Teaching machines to understand human language. NLP powers chatbots, translation, and voice assistants through tokenization, embeddings, and LLMs.",
+        "bodyHtml": "<p>Teaching machines to understand human language.</p>\n<p>NLP powers chatbots, translation, and voice assistants through tokenization, embeddings, and large language models.</p>\n<ul><li>Classical pipeline: tokenize → tag → parse → extract</li><li>Modern approach: pretrained transformer + fine-tuning</li></ul>"
+    },
+    {
+        "slug": "reinforcement-learning",
+        "title": "Reinforcement Learning",
+        "date": "2024-11-10",
+        "category": "",
+        "tags": [],
+        "image": "",
+        "thumbnail": "",
+        "file": "",
+        "description": "Learning through trial, error, and reward. An agent interacts with an environment and learns a policy that maximizes cumulative reward over time.",
+        "bodyHtml": "<p>Learning through trial, error, and reward.</p>\n<p>An agent interacts with an environment, receiving rewards or penalties, and learns a policy that maximizes cumulative reward over time.</p>\n<ul><li>Used in robotics, game AI (AlphaGo), and resource allocation</li><li>Core trade-off: exploration vs. exploitation</li></ul>"
+    }
+]

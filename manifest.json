@@ -1,0 +1,25 @@
+{
+    "name": "Workspace — Personal Site",
+    "short_name": "Workspace",
+    "description": "Personal portfolio, notes repository, and knowledge base.",
+    "start_url": "./index.html",
+    "scope": "./",
+    "display": "standalone",
+    "background_color": "#f5f5f7",
+    "theme_color": "#0071e3",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "logo.jpg",
+            "sizes": "192x192",
+            "type": "image/jpeg",
+            "purpose": "any"
+        },
+        {
+            "src": "logo.jpg",
+            "sizes": "512x512",
+            "type": "image/jpeg",
+            "purpose": "any maskable"
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+[
+    {
+        "slug": "attention-is-all-you-need",
+        "title": "Attention Is All You Need — Summary",
+        "date": "2024-09-12",
+        "category": "",
+        "tags": [],
+        "image": "",
+        "thumbnail": "",
+        "file": "",
+        "description": "Summary notes on the Transformer architecture paper. Introduces an architecture based entirely on attention mechanisms, removing recurrence and convolutions.",
+        "bodyHtml": "<p>Summary notes on the Transformer architecture paper.</p>\n<p>Introduces the Transformer, an architecture based entirely on attention mechanisms, removing recurrence and convolutions entirely.</p>\n<ul><li>Self-attention lets the model weigh all positions in a sequence directly</li><li>Enabled the current generation of large language models</li></ul>"
+    },
+    {
+        "slug": "bert",
+        "title": "BERT — Summary",
+        "date": "2024-08-01",
+        "category": "",
+        "tags": [],
+        "image": "",
+        "thumbnail": "",
+        "file": "",
+        "description": "Summary notes on bidirectional transformer pretraining. BERT pretrains deep bidirectional representations, then fine-tunes for downstream tasks.",
+        "bodyHtml": "<p>Summary notes on bidirectional transformer pretraining.</p>\n<p>BERT pretrains deep bidirectional representations by jointly conditioning on left and right context in all layers, then fine-tunes for downstream tasks.</p>\n<ul><li>Masked language modeling as the pretraining objective</li><li>Strong results across many NLP benchmarks with minimal task-specific changes</li></ul>"
+    },
+    {
+        "slug": "alphago",
+        "title": "AlphaGo — Summary",
+        "date": "2024-07-15",
+        "category": "",
+        "tags": [],
+        "image": "",
+        "thumbnail": "",
+        "file": "",
+        "description": "Summary notes on mastering Go with deep neural networks and tree search, combining supervised learning with reinforcement learning from self-play.",
+        "bodyHtml": "<p>Summary notes on mastering Go with deep neural networks and tree search.</p>\n<p>Combines supervised learning from human games with reinforcement learning from self-play, guided by Monte Carlo tree search.</p>\n<ul><li>First program to beat a professional human Go player</li><li>Demonstrated RL + search as a powerful combination for hard search spaces</li></ul>"
+    }
+]

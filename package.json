@@ -1,0 +1,10 @@
+{
+    "name": "workspace-site",
+    "private": true,
+    "type": "module",
+    "version": "1.0.0",
+    "description": "Static personal site — content is Markdown, compiled to JSON at build time.",
+    "scripts": {
+        "build": "node scripts/build-content.mjs"
+    }
+}

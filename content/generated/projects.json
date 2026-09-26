@@ -1,0 +1,38 @@
+[
+    {
+        "slug": "personal-knowledge-hub",
+        "title": "Personal Knowledge Hub",
+        "date": "2025-09-01",
+        "category": "",
+        "tags": [],
+        "image": "",
+        "thumbnail": "",
+        "file": "",
+        "description": "This very site: a static, installable personal knowledge base. Markdown-first content, a zero-dependency build script, and a small vanilla-JS frontend.",
+        "bodyHtml": "<p>This very site: a static, installable personal knowledge base.</p>\n<p>Markdown-first content, a zero-dependency build script, and a small vanilla-JS frontend — no framework, no bundler, deployable straight to GitHub Pages.</p>\n<ul><li>PWA with offline support</li><li>Notes, projects, and links all driven by data/content files</li></ul>"
+    },
+    {
+        "slug": "data-evaluation-platform",
+        "title": "Data Evaluation Platform",
+        "date": "2025-05-01",
+        "category": "",
+        "tags": [],
+        "image": "",
+        "thumbnail": "",
+        "file": "",
+        "description": "Internal platform for validating and scoring large-scale datasets before release. Built pipelines that automatically flag anomalies and schema drift.",
+        "bodyHtml": "<p>Internal platform for validating and scoring large-scale datasets before release.</p>\n<p>Built pipelines that automatically flag anomalies, missing fields, and schema drift across incoming data batches, cutting manual review time significantly.</p>\n<ul><li>Stack: Python, PostgreSQL, Kubernetes, GCP</li><li>Impact: reduced manual QA effort for 10+ downstream teams</li></ul>"
+    },
+    {
+        "slug": "dev-productivity-toolkit",
+        "title": "Developer Productivity Toolkit",
+        "date": "2025-02-10",
+        "category": "",
+        "tags": [],
+        "image": "",
+        "thumbnail": "",
+        "file": "",
+        "description": "A set of internal CLI tools to speed up common engineering workflows, automating environment setup, log triage, and dataset sampling.",
+        "bodyHtml": "<p>A set of internal CLI tools to speed up common engineering workflows.</p>\n<p>Automated repetitive tasks like environment setup, log triage, and dataset sampling into a single command-line toolkit shared across teams.</p>\n<ul><li>Stack: Python, Typer, Docker</li></ul>"
+    }
+]

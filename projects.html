@@ -1,45 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects</title> 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Custom Stylesheet -->
-    <link href="src/styles.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workspace — Projects</title>
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#0071e3" />
+    <link rel="apple-touch-icon" href="logo.jpg" />
+    <link rel="icon" href="logo.jpg" />
+    <link rel="stylesheet" href="src/styles/main.css" />
 </head>
-<body data-page-type="projects">
 
-    <!-- Sidebar Toggle Button -->
-    <button class="toggle-btn navbar-toggler" onclick="toggleSidebar()">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+<body data-page-type="projects" data-page-id="projects">
+    <header id="app-header"></header>
 
-    <div class="sidebar">
-        <h2 class="text-center text-light">Workspace</h2>
-        <a href="index.html">Blogs</a>
-        <a href="concepts.html">Concepts</a>
-        <a href="research-papers.html">Research Papers</a>
-        <a href="projects.html">Projects</a>
-    </div>
+    <main class="page">
+        <section class="section" style="margin-top: var(--space-5)">
+            <h1 class="section-title">Projects</h1>
+            <div id="content-grid" class="grid"></div>
+        </section>
+    </main>
 
-    <!-- Main Content -->
-    <div class="content">
-        <div class="container mt-5">
-            <h1>Projects</h1>  <!-- Change title accordingly -->
-            <div class="row" id="contentPosts">
-                <!-- Content posts will be loaded here -->
-            </div>
-        </div>
-    </div>
+    <footer id="app-footer"></footer>
 
- <!-- Bootstrap and jQuery JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-
-
-    <script src="src/script.js"></script>
-    <script>loadContent('projects');</script>  <!-- Load relevant content for each page -->
+    <script type="module" src="src/pages/content-page.js"></script>
 </body>
+
 </html>

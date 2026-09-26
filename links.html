@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Workspace — About</title>
-    <meta name="description" content="Personal portfolio, notes repository, and knowledge base." />
+    <title>Workspace — Links</title>
+    <meta name="description" content="Find me across the web." />
     <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#0071e3" />
     <link rel="apple-touch-icon" href="logo.jpg" />
@@ -17,13 +17,16 @@
     <header id="app-header"></header>
 
     <main class="page">
-        <div id="hero-section"></div>
-        <div id="about-section"></div>
+        <section class="section" style="margin-top: var(--space-5)">
+            <h1 class="section-title">Links</h1>
+            <p class="section-text">You can find me on these platforms.</p>
+            <div id="links-grid" class="links-grid"></div>
+        </section>
     </main>
 
     <footer id="app-footer"></footer>
 
-    <script type="module" src="src/pages/home.js"></script>
+    <script type="module" src="src/pages/links-page.js"></script>
 </body>
 
 </html>
