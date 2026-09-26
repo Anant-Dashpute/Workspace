@@ -85,6 +85,11 @@ function excerptOf(markdown, length = 160) {
     return plain.length > length ? `${plain.slice(0, length).trim()}…` : plain;
 }
 
+function readTimeOf(markdown) {
+    const words = markdown.trim().split(/\s+/).filter(Boolean).length;
+    return `${Math.max(1, Math.round(words / 200))} min read`;
+}
+
 async function buildCollection(name) {
     const dir = join(CONTENT_DIR, name);
     let files = [];
@@ -103,8 +108,8 @@ async function buildCollection(name) {
                 title: data.title || basename(file, ".md"),
                 date: data.date || "",
                 category: data.category || data.tags?.[0] || "",
-                tags: data.tags || [],
-                image: data.image || "",
+                tags: data.tags && data.tags.length ? data.tags : [data.category].filter(Boolean),
+                readTime: readTimeOf(body),
                 thumbnail: data.thumbnail || "",
                 file: data.file || "",
                 description: excerptOf(body),

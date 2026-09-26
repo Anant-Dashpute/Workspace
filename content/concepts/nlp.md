@@ -1,6 +1,8 @@
 ---
 title: Natural Language Processing
 date: 2024-11-08
+category: Concepts
+tags: [NLP, Transformers]
 ---
 Teaching machines to understand human language.
 

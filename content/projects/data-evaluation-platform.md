@@ -1,6 +1,8 @@
 ---
 title: Data Evaluation Platform
 date: 2025-05-01
+category: Projects
+tags: [Data Platform, Cloud]
 ---
 Internal platform for validating and scoring large-scale datasets before release.
 

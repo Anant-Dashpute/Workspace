@@ -1,6 +1,7 @@
 ---
 title: Why I Write Notes in Public
 date: 2024-10-15
+tags: [Meta]
 ---
 A short note on why this site exists.
 

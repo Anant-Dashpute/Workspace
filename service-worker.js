@@ -1,5 +1,5 @@
 // Minimal service worker: cache-first for static assets, network-first for data.
-const CACHE_NAME = "workspace-cache-v2";
+const CACHE_NAME = "workspace-cache-v3";
 
 const CORE_ASSETS = [
     "./",
@@ -20,12 +20,14 @@ const CORE_ASSETS = [
     "src/data/certifications.js",
     "src/data/links.js",
     "src/data/nav.js",
+    "src/data/publications.js",
     "src/components/navbar.js",
     "src/components/footer.js",
     "src/sections/hero.js",
     "src/sections/about.js",
     "src/sections/notes-section.js",
     "src/sections/links-section.js",
+    "src/sections/publications.js",
     "src/pages/home.js",
     "src/pages/notes-page.js",
     "src/pages/links-page.js",

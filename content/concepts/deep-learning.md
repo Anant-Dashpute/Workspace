@@ -1,6 +1,8 @@
 ---
 title: Deep Learning, Briefly
 date: 2024-11-07
+category: Concepts
+tags: [Deep Learning, Neural Networks]
 ---
 Neural networks with many layers, inspired by the brain.
 

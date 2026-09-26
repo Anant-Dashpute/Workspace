@@ -1,6 +1,8 @@
 ---
 title: BERT — Summary
 date: 2024-08-01
+category: Research
+tags: [NLP, Pretraining]
 ---
 Summary notes on bidirectional transformer pretraining.
 

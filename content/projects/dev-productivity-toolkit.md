@@ -1,6 +1,8 @@
 ---
 title: Developer Productivity Toolkit
 date: 2025-02-10
+category: Projects
+tags: [Tooling, Automation]
 ---
 A set of internal CLI tools to speed up common engineering workflows.
 

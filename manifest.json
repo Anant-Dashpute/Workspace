@@ -1,12 +1,12 @@
 {
-    "name": "Workspace — Personal Site",
+    "name": "Anant Dashpute — Workspace",
     "short_name": "Workspace",
-    "description": "Personal portfolio, notes repository, and knowledge base.",
+    "description": "Senior engineer — cloud architecture, compute selection, and cost optimization. Notes, projects, and publications.",
     "start_url": "./index.html",
     "scope": "./",
     "display": "standalone",
-    "background_color": "#f5f5f7",
-    "theme_color": "#0071e3",
+    "background_color": "#0a0a0b",
+    "theme_color": "#0a0a0b",
     "orientation": "portrait-primary",
     "icons": [
         {

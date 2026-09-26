@@ -1,38 +1,46 @@
 [
   {
-    "slug": "why-i-write-notes",
-    "title": "Why I Write Notes in Public",
-    "date": "2024-10-15",
-    "category": "",
-    "tags": [],
-    "image": "",
+    "slug": "generative-ai",
+    "title": "The Rise of Generative AI",
+    "date": "2024-11-02",
+    "category": "AI",
+    "tags": [
+      "AI",
+      "Generative Models"
+    ],
+    "readTime": "1 min read",
     "thumbnail": "",
     "file": "",
-    "description": "A short note on why this site exists. I write notes as I learn so future-me (and maybe you) can find them again.",
-    "bodyHtml": "<p>A short note on why this site exists.</p>\n<p>I write notes as I learn so future-me (and maybe you) can find them again. This site is intentionally simple: Markdown files, a tiny build script, and static hosting.</p>"
+    "description": "Exploring how generative models moved beyond text into images, audio, and video.",
+    "bodyHtml": "<p>Exploring how generative models moved beyond text into images, audio, and video.</p>\n<p>Generative AI, powered by models like GPT and diffusion-based image generators, is reshaping how we create content. These models generate realistic text, images, and video, pushing the boundaries of creativity and automation.</p>\n<ul><li>Applications span design, entertainment, and software development</li><li>Raises open questions about originality and attribution</li></ul>"
   },
   {
     "slug": "ai-in-healthcare",
     "title": "AI in Healthcare",
     "date": "2024-11-01",
-    "category": "",
-    "tags": [],
-    "image": "https://via.placeholder.com/400x200",
+    "category": "AI",
+    "tags": [
+      "AI",
+      "Healthcare"
+    ],
+    "readTime": "1 min read",
     "thumbnail": "",
     "file": "",
     "description": "How AI is transforming diagnostics and patient care. AI is making strides in healthcare through predictive analytics and personalized medicine.",
     "bodyHtml": "<p>How AI is transforming diagnostics and patient care.</p>\n<p>AI is making strides in healthcare through predictive analytics and personalized medicine. From diagnostic systems to surgical robotics, AI is helping doctors detect disease earlier and tailor treatment to individual patients.</p>"
   },
   {
-    "slug": "generative-ai",
-    "title": "The Rise of Generative AI",
-    "date": "2024-11-02",
-    "category": "",
-    "tags": [],
-    "image": "https://via.placeholder.com/400x200",
+    "slug": "why-i-write-notes",
+    "title": "Why I Write Notes in Public",
+    "date": "2024-10-15",
+    "category": "Meta",
+    "tags": [
+      "Meta"
+    ],
+    "readTime": "1 min read",
     "thumbnail": "",
     "file": "",
-    "description": "Exploring how generative models moved beyond text into images, audio, and video.",
-    "bodyHtml": "<p>Exploring how generative models moved beyond text into images, audio, and video.</p>\n<p>Generative AI, powered by models like GPT and diffusion-based image generators, is reshaping how we create content. These models generate realistic text, images, and video, pushing the boundaries of creativity and automation.</p>\n<ul><li>Applications span design, entertainment, and software development</li><li>Raises open questions about originality and attribution</li></ul>"
+    "description": "A short note on why this site exists. I write notes as I learn so future-me (and maybe you) can find them again.",
+    "bodyHtml": "<p>A short note on why this site exists.</p>\n<p>I write notes as I learn so future-me (and maybe you) can find them again. This site is intentionally simple: Markdown files, a tiny build script, and static hosting.</p>"
   }
 ]

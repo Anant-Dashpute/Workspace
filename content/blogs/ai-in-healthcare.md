@@ -1,7 +1,7 @@
 ---
 title: AI in Healthcare
 date: 2024-11-01
-image: https://via.placeholder.com/400x200
+tags: [AI, Healthcare]
 ---
 How AI is transforming diagnostics and patient care.
 

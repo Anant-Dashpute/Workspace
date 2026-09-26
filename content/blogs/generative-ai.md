@@ -1,7 +1,7 @@
 ---
 title: The Rise of Generative AI
 date: 2024-11-02
-image: https://via.placeholder.com/400x200
+tags: [AI, Generative Models]
 ---
 Exploring how generative models moved beyond text into images, audio, and video.
 

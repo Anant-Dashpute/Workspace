@@ -1,6 +1,8 @@
 ---
 title: Personal Knowledge Hub
 date: 2025-09-01
+category: Projects
+tags: [Web, PWA]
 ---
 This very site: a static, installable personal knowledge base.
 

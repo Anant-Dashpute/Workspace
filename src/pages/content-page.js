@@ -26,11 +26,14 @@ async function loadPosts(type) {
     grid.innerHTML = posts
         .map(
             (post) => `
-    <article class="card">
-      ${post.image ? `<img class="card-thumb" src="${post.image}" alt="${post.title}" loading="lazy" />` : ""}
+    <article class="card card-text-only">
       <div class="card-body">
+        <div class="card-meta">
+          ${post.date ? `<span class="meta-mono">${post.date}</span>` : ""}
+          ${post.readTime ? `<span class="meta-mono">${post.readTime}</span>` : ""}
+        </div>
         <h3 class="card-title">${post.title}</h3>
-        ${post.date ? `<p class="card-subtitle">${post.date}</p>` : ""}
+        ${post.tags?.length ? `<div class="chip-list">${post.tags.map((t) => `<span class="chip chip-mono">${t}</span>`).join("")}</div>` : ""}
         <p class="card-text">${post.description}</p>
         ${post.bodyHtml
                     ? `<details class="card-details"><summary>Read more</summary>${post.bodyHtml}</details>`

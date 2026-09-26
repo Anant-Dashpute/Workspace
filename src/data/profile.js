@@ -1,39 +1,41 @@
 // Central "About Me" content — edit this file to update the profile section.
 export const profile = {
-    name: "Alex Morgan",
-    role: "Software Engineer · AI & Platform Systems",
+    name: "Anant Dashpute",
+    role: "Senior Engineer · Cloud Architecture & Compute Cost Optimization",
     avatar: "logo.jpg",
     location: "Bengaluru, India",
     intro:
-        "I build reliable software systems and explore the intersection of AI, data platforms, and clean engineering.",
+        "Senior engineer working across cloud architecture, compute selection, and cost optimization — with a research background in real-time perception systems.",
     summary:
-        "I'm a software engineer with experience across backend platforms, data pipelines, and applied AI. " +
-        "I care about simple architecture, readable code, and building things that are easy to maintain. " +
-        "Outside of work, I write notes on things I learn and share them here.",
+        "I'm a senior engineer focused on designing efficient cloud architectures: right-sizing compute, " +
+        "optimizing infrastructure spend, and building systems that scale predictably. Before moving into " +
+        "platform engineering I worked in applied research on real-time object classification for automotive " +
+        "perception, published in the SAE Technical Paper Series. I care about grounded, measurable engineering " +
+        "decisions over hype.",
     skills: [
+        "Cloud Architecture",
+        "Compute Selection & Sizing",
+        "Cost Optimization",
+        "Platform Engineering",
         "System Design",
-        "Backend Engineering",
-        "Data Pipelines",
-        "Applied Machine Learning",
-        "Cloud Infrastructure",
-        "API Design",
+        "Real-Time Systems",
     ],
     techStack: [
-        "Python",
-        "JavaScript",
-        "Node.js",
-        "PostgreSQL",
-        "Docker",
-        "Kubernetes",
-        "GCP",
         "AWS",
+        "GCP",
+        "Kubernetes",
+        "Docker",
+        "Python",
+        "Terraform",
+        "PostgreSQL",
+        "Linux",
     ],
     interests: [
+        "Cloud Economics",
+        "Autonomous Perception",
         "Distributed Systems",
-        "Developer Tooling",
+        "Applied Research",
         "Reading",
-        "Chess",
-        "Photography",
     ],
     contact: {
         email: "hello@example.com",

@@ -1,26 +1,20 @@
 // Career / education timeline — add new entries at the top.
 export const timeline = [
     {
-        year: "2024 — Present",
-        title: "Senior Software Engineer",
+        year: "2022 — Present",
+        title: "Senior Engineer (RD/IAZ), Mercedes-Benz Research & Development India",
         description:
-            "Leading design and development of scalable data evaluation platforms and internal tooling.",
+            "Cloud architecture, compute selection, and cost optimization for large-scale engineering platforms.",
     },
     {
-        year: "2022 — 2024",
-        title: "Software Engineer",
+        year: "2021 — 2022",
+        title: "Research Intern (ADAS), Continental Automotive Components India",
         description:
-            "Built backend services and automated pipelines for large-scale data processing workflows.",
+            "Applied research on real-time object classification for automotive perception systems.",
     },
     {
         year: "2020 — 2022",
-        title: "Junior Developer",
-        description:
-            "Worked on internal web applications, APIs, and developer productivity tools.",
-    },
-    {
-        year: "2016 — 2020",
-        title: "B.Tech in Computer Science",
-        description: "Graduated with a focus on distributed systems and machine learning.",
+        title: "MTech, Mathematical Computing — IIST Thiruvananthapuram",
+        description: "Indian Institute of Space Science and Technology.",
     },
 ];

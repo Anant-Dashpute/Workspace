@@ -3,9 +3,12 @@
         "slug": "personal-knowledge-hub",
         "title": "Personal Knowledge Hub",
         "date": "2025-09-01",
-        "category": "",
-        "tags": [],
-        "image": "",
+        "category": "Projects",
+        "tags": [
+            "Web",
+            "PWA"
+        ],
+        "readTime": "1 min read",
         "thumbnail": "",
         "file": "",
         "description": "This very site: a static, installable personal knowledge base. Markdown-first content, a zero-dependency build script, and a small vanilla-JS frontend.",
@@ -15,9 +18,12 @@
         "slug": "data-evaluation-platform",
         "title": "Data Evaluation Platform",
         "date": "2025-05-01",
-        "category": "",
-        "tags": [],
-        "image": "",
+        "category": "Projects",
+        "tags": [
+            "Data Platform",
+            "Cloud"
+        ],
+        "readTime": "1 min read",
         "thumbnail": "",
         "file": "",
         "description": "Internal platform for validating and scoring large-scale datasets before release. Built pipelines that automatically flag anomalies and schema drift.",
@@ -27,9 +33,12 @@
         "slug": "dev-productivity-toolkit",
         "title": "Developer Productivity Toolkit",
         "date": "2025-02-10",
-        "category": "",
-        "tags": [],
-        "image": "",
+        "category": "Projects",
+        "tags": [
+            "Tooling",
+            "Automation"
+        ],
+        "readTime": "1 min read",
         "thumbnail": "",
         "file": "",
         "description": "A set of internal CLI tools to speed up common engineering workflows, automating environment setup, log triage, and dataset sampling.",

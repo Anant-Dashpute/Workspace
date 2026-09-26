@@ -1,6 +1,8 @@
 ---
 title: Attention Is All You Need — Summary
 date: 2024-09-12
+category: Research
+tags: [NLP, Transformers]
 ---
 Summary notes on the Transformer architecture paper.
 

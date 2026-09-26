@@ -1,21 +1,15 @@
-// Certifications — update as you earn new ones.
+// Certifications — sample placeholders; replace with your verified certifications.
 export const certifications = [
     {
-        title: "Google Cloud Professional Data Engineer",
-        issuer: "Google Cloud",
+        title: "Sample: AWS Certified Solutions Architect – Associate",
+        issuer: "Amazon Web Services",
         date: "2024",
         url: "#",
     },
     {
-        title: "Certified Kubernetes Application Developer (CKAD)",
-        issuer: "CNCF",
+        title: "Sample: Google Cloud Professional Cloud Architect",
+        issuer: "Google Cloud",
         date: "2023",
-        url: "#",
-    },
-    {
-        title: "AWS Certified Solutions Architect – Associate",
-        issuer: "Amazon Web Services",
-        date: "2022",
         url: "#",
     },
 ];

@@ -1,6 +1,8 @@
 ---
 title: AlphaGo — Summary
 date: 2024-07-15
+category: Research
+tags: [Reinforcement Learning]
 ---
 Summary notes on mastering Go with deep neural networks and tree search.
 

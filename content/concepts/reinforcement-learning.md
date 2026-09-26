@@ -1,6 +1,8 @@
 ---
 title: Reinforcement Learning
 date: 2024-11-10
+category: Concepts
+tags: [Reinforcement Learning]
 ---
 Learning through trial, error, and reward.
 

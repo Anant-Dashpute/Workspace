@@ -3,9 +3,12 @@
         "slug": "attention-is-all-you-need",
         "title": "Attention Is All You Need — Summary",
         "date": "2024-09-12",
-        "category": "",
-        "tags": [],
-        "image": "",
+        "category": "Research",
+        "tags": [
+            "NLP",
+            "Transformers"
+        ],
+        "readTime": "1 min read",
         "thumbnail": "",
         "file": "",
         "description": "Summary notes on the Transformer architecture paper. Introduces an architecture based entirely on attention mechanisms, removing recurrence and convolutions.",
@@ -15,9 +18,12 @@
         "slug": "bert",
         "title": "BERT — Summary",
         "date": "2024-08-01",
-        "category": "",
-        "tags": [],
-        "image": "",
+        "category": "Research",
+        "tags": [
+            "NLP",
+            "Pretraining"
+        ],
+        "readTime": "1 min read",
         "thumbnail": "",
         "file": "",
         "description": "Summary notes on bidirectional transformer pretraining. BERT pretrains deep bidirectional representations, then fine-tunes for downstream tasks.",
@@ -27,9 +33,11 @@
         "slug": "alphago",
         "title": "AlphaGo — Summary",
         "date": "2024-07-15",
-        "category": "",
-        "tags": [],
-        "image": "",
+        "category": "Research",
+        "tags": [
+            "Reinforcement Learning"
+        ],
+        "readTime": "1 min read",
         "thumbnail": "",
         "file": "",
         "description": "Summary notes on mastering Go with deep neural networks and tree search, combining supervised learning with reinforcement learning from self-play.",

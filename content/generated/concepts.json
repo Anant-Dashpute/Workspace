@@ -3,9 +3,12 @@
         "slug": "deep-learning",
         "title": "Deep Learning, Briefly",
         "date": "2024-11-07",
-        "category": "",
-        "tags": [],
-        "image": "",
+        "category": "Concepts",
+        "tags": [
+            "Deep Learning",
+            "Neural Networks"
+        ],
+        "readTime": "1 min read",
         "thumbnail": "",
         "file": "",
         "description": "Neural networks with many layers, inspired by the brain. Deep learning uses layered neural networks to learn complex patterns from large datasets.",
@@ -15,9 +18,12 @@
         "slug": "nlp",
         "title": "Natural Language Processing",
         "date": "2024-11-08",
-        "category": "",
-        "tags": [],
-        "image": "",
+        "category": "Concepts",
+        "tags": [
+            "NLP",
+            "Transformers"
+        ],
+        "readTime": "1 min read",
         "thumbnail": "",
         "file": "",
         "description": "Teaching machines to understand human language. NLP powers chatbots, translation, and voice assistants through tokenization, embeddings, and LLMs.",
@@ -27,9 +33,11 @@
         "slug": "reinforcement-learning",
         "title": "Reinforcement Learning",
         "date": "2024-11-10",
-        "category": "",
-        "tags": [],
-        "image": "",
+        "category": "Concepts",
+        "tags": [
+            "Reinforcement Learning"
+        ],
+        "readTime": "1 min read",
         "thumbnail": "",
         "file": "",
         "description": "Learning through trial, error, and reward. An agent interacts with an environment and learns a policy that maximizes cumulative reward over time.",
