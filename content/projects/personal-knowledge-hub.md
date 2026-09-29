@@ -1,13 +1,13 @@
 ---
-title: Personal Knowledge Hub
+title: Vibe coded apps
 date: 2025-09-01
 category: Projects
 tags: [Web, PWA]
 ---
-This very site: a static, installable personal knowledge base.
+This site: a static, installable personal useful suff base.
 
-Markdown-first content, a zero-dependency build script, and a small vanilla-JS
+This contains basic apps vibe-coded
 frontend — no framework, no bundler, deployable straight to GitHub Pages.
 
 - PWA with offline support
-- Notes, projects, and links all driven by data/content files
+- Daily use, trackers, games and timers all driven by data/content files
