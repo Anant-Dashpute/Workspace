@@ -1,46 +1,158 @@
 [
-    {
-        "slug": "deep-learning",
-        "title": "Deep Learning, Briefly",
-        "date": "2024-11-07",
-        "category": "Concepts",
-        "tags": [
-            "Deep Learning",
-            "Neural Networks"
-        ],
-        "readTime": "1 min read",
-        "thumbnail": "",
-        "file": "",
-        "description": "Neural networks with many layers, inspired by the brain. Deep learning uses layered neural networks to learn complex patterns from large datasets.",
-        "bodyHtml": "<p>Neural networks with many layers, inspired by the brain.</p>\n<p>Deep learning uses layered neural networks to learn complex patterns from large datasets. It excels at image recognition, natural language processing, and sequence modeling.</p>\n<ul><li>Convolutional networks: spatial data (images)</li><li>Recurrent / transformer networks: sequential data (text, audio)</li></ul>"
-    },
-    {
-        "slug": "nlp",
-        "title": "Natural Language Processing",
-        "date": "2024-11-08",
-        "category": "Concepts",
-        "tags": [
-            "NLP",
-            "Transformers"
-        ],
-        "readTime": "1 min read",
-        "thumbnail": "",
-        "file": "",
-        "description": "Teaching machines to understand human language. NLP powers chatbots, translation, and voice assistants through tokenization, embeddings, and LLMs.",
-        "bodyHtml": "<p>Teaching machines to understand human language.</p>\n<p>NLP powers chatbots, translation, and voice assistants through tokenization, embeddings, and large language models.</p>\n<ul><li>Classical pipeline: tokenize → tag → parse → extract</li><li>Modern approach: pretrained transformer + fine-tuning</li></ul>"
-    },
-    {
-        "slug": "reinforcement-learning",
-        "title": "Reinforcement Learning",
-        "date": "2024-11-10",
-        "category": "Concepts",
-        "tags": [
-            "Reinforcement Learning"
-        ],
-        "readTime": "1 min read",
-        "thumbnail": "",
-        "file": "",
-        "description": "Learning through trial, error, and reward. An agent interacts with an environment and learns a policy that maximizes cumulative reward over time.",
-        "bodyHtml": "<p>Learning through trial, error, and reward.</p>\n<p>An agent interacts with an environment, receiving rewards or penalties, and learns a policy that maximizes cumulative reward over time.</p>\n<ul><li>Used in robotics, game AI (AlphaGo), and resource allocation</li><li>Core trade-off: exploration vs. exploitation</li></ul>"
-    }
+  {
+    "slug": "kafka-topics",
+    "title": "Kafka Topics",
+    "date": "2026-10-03",
+    "category": "Concepts",
+    "tags": [
+      "Kafka",
+      "Messaging",
+      "Streaming"
+    ],
+    "readTime": "1 min read",
+    "thumbnail": "",
+    "file": "",
+    "description": "The core unit of organization for messages flowing through Kafka. A topic is a named stream of records that producers write to and consumers read from, split in…",
+    "bodyHtml": "<p>The core unit of organization for messages flowing through Kafka.</p>\n<p>A topic is a named stream of records that producers write to and consumers read from, split into partitions for scalability and parallel processing.</p>\n<ul><li>Partitions allow a topic to be distributed across brokers and consumed in parallel</li><li>Messages within a partition are strictly ordered and retained for a configurable period</li><li>Consumer groups let multiple consumers split partitions for parallel processing</li><li>Replication factor controls how many broker copies exist for fault tolerance</li></ul>"
+  },
+  {
+    "slug": "kubernetes-emptydir",
+    "title": "Kubernetes emptyDir Volumes",
+    "date": "2026-10-03",
+    "category": "Concepts",
+    "tags": [
+      "Kubernetes",
+      "Volumes",
+      "Storage"
+    ],
+    "readTime": "1 min read",
+    "thumbnail": "",
+    "file": "",
+    "description": "A temporary, podscoped volume useful for scratch space and sharing data between containers. An emptyDir is created empty when a pod is assigned to a node and ex…",
+    "bodyHtml": "<p>A temporary, pod-scoped volume useful for scratch space and sharing data between containers.</p>\n<p>An <code>emptyDir</code> is created empty when a pod is assigned to a node and exists as long as that pod runs on that node — deleted permanently once the pod is removed.</p>\n<ul><li>Great for scratch space, caches, or passing files between containers in the same pod</li><li>Can be backed by node disk or <code>Memory</code> medium for faster, RAM-based storage</li><li>Data does not survive pod restarts that reschedule it to a different node</li><li>Commonly used alongside sidecar containers for log shipping or data staging</li></ul>"
+  },
+  {
+    "slug": "kubernetes-sidecar-container",
+    "title": "Kubernetes Sidecar Containers",
+    "date": "2026-10-03",
+    "category": "Concepts",
+    "tags": [
+      "Kubernetes",
+      "Sidecar",
+      "Architecture"
+    ],
+    "readTime": "1 min read",
+    "thumbnail": "",
+    "file": "",
+    "description": "Running a helper container alongside your main app inside the same pod. A sidecar container runs in the same pod as the primary container, sharing its network n…",
+    "bodyHtml": "<p>Running a helper container alongside your main app inside the same pod.</p>\n<p>A sidecar container runs in the same pod as the primary container, sharing its network namespace and volumes, to add functionality without changing app code.</p>\n<ul><li>Common uses: log shippers, proxies (e.g. service mesh), metrics exporters, config reloaders</li><li>Shares the pod's network (localhost) and any mounted volumes with the main container</li><li>Since Kubernetes 1.28, native sidecar support lets you mark them as <code>restartPolicy: Always</code> init containers</li><li>Keeps the main application container focused on a single responsibility</li></ul>"
+  },
+  {
+    "slug": "kubernetes-volume-mounts",
+    "title": "Kubernetes Volume Mounts",
+    "date": "2026-10-03",
+    "category": "Concepts",
+    "tags": [
+      "Kubernetes",
+      "Volumes",
+      "Storage"
+    ],
+    "readTime": "1 min read",
+    "thumbnail": "",
+    "file": "",
+    "description": "How pods attach storage to containers so data can persist or be shared. A volume is defined at the pod level and then mounted into one or more containers at a s…",
+    "bodyHtml": "<p>How pods attach storage to containers so data can persist or be shared.</p>\n<p>A volume is defined at the pod level and then mounted into one or more containers at a specific path, decoupling storage lifecycle from the container filesystem.</p>\n<ul><li>Volumes are declared in <code>spec.volumes</code> and attached via <code>volumeMounts</code> in each container</li><li>Multiple containers in a pod can mount the same volume to share data</li><li>Volume types include <code>configMap</code>, <code>secret</code>, <code>persistentVolumeClaim</code>, and <code>emptyDir</code></li><li>Mount paths can be read-only to prevent accidental writes</li></ul>"
+  },
+  {
+    "slug": "process-chain-service",
+    "title": "Process Chain Service Pattern",
+    "date": "2026-10-03",
+    "category": "Concepts",
+    "tags": [
+      "Architecture",
+      "Pipelines",
+      "Microservices"
+    ],
+    "readTime": "1 min read",
+    "thumbnail": "",
+    "file": "",
+    "description": "Chaining services together so each stage processes and forwards work to the next. A process chain service structures a workflow as a sequence of independent ser…",
+    "bodyHtml": "<p>Chaining services together so each stage processes and forwards work to the next.</p>\n<p>A process chain service structures a workflow as a sequence of independent services, each handling one transformation step and passing the result downstream.</p>\n<ul><li>Each service in the chain has a single responsibility, making it easy to test and replace</li><li>Stages can be connected via direct calls, message queues, or event streams</li><li>Failures can be isolated and retried at the stage level instead of restarting the whole pipeline</li><li>Common in data pipelines, approval workflows, and multi-step request processing</li></ul>"
+  },
+  {
+    "slug": "kubernetes-config-maps",
+    "title": "Kubernetes ConfigMaps",
+    "date": "2026-09-29",
+    "category": "Concepts",
+    "tags": [
+      "Kubernetes",
+      "ConfigMaps",
+      "DevOps"
+    ],
+    "readTime": "1 min read",
+    "thumbnail": "",
+    "file": "",
+    "description": "Decoupling configuration from container images in Kubernetes. A ConfigMap stores nonconfidential keyvalue configuration data that pods can consume as environmen…",
+    "bodyHtml": "<p>Decoupling configuration from container images in Kubernetes.</p>\n<p>A ConfigMap stores non-confidential key-value configuration data that pods can consume as environment variables, command-line arguments, or mounted files. This keeps configuration separate from application code so images stay portable across environments.</p>\n<ul><li>Create from literals, files, or directories with <code>kubectl create configmap</code></li><li>Consume via <code>envFrom</code>, individual <code>env.valueFrom.configMapKeyRef</code>, or volume mounts</li><li>Updates to a mounted ConfigMap propagate to pods, but env var injections do not</li><li>Not for secrets — use a Secret object for sensitive data instead</li></ul>"
+  },
+  {
+    "slug": "kubernetes-probes",
+    "title": "Kubernetes Probes (Liveness, Readiness, Startup)",
+    "date": "2026-09-29",
+    "category": "Concepts",
+    "tags": [
+      "Kubernetes",
+      "Probes",
+      "DevOps"
+    ],
+    "readTime": "1 min read",
+    "thumbnail": "",
+    "file": "",
+    "description": "Health checks that let Kubernetes manage container lifecycle safely. Probes let the kubelet periodically check container health and act on the results, keeping…",
+    "bodyHtml": "<p>Health checks that let Kubernetes manage container lifecycle safely.</p>\n<p>Probes let the kubelet periodically check container health and act on the results, keeping traffic away from unhealthy pods and restarting stuck ones.</p>\n<ul><li>Liveness probe: restarts the container if it fails, catching deadlocks</li><li>Readiness probe: removes the pod from service endpoints until it passes</li><li>Startup probe: gives slow-starting containers time before liveness checks begin</li><li>Supported mechanisms: HTTP GET, TCP socket, and exec command checks</li></ul>"
+  },
+  {
+    "slug": "reinforcement-learning",
+    "title": "Reinforcement Learning",
+    "date": "2024-11-10",
+    "category": "Concepts",
+    "tags": [
+      "Reinforcement Learning"
+    ],
+    "readTime": "1 min read",
+    "thumbnail": "",
+    "file": "",
+    "description": "Learning through trial, error, and reward. An agent interacts with an environment, receiving rewards or penalties, and learns a policy that maximizes cumulative…",
+    "bodyHtml": "<p>Learning through trial, error, and reward.</p>\n<p>An agent interacts with an environment, receiving rewards or penalties, and learns a policy that maximizes cumulative reward over time.</p>\n<ul><li>Used in robotics, game AI (AlphaGo), and resource allocation</li><li>Core trade-off: exploration vs. exploitation</li></ul>"
+  },
+  {
+    "slug": "nlp",
+    "title": "Natural Language Processing",
+    "date": "2024-11-08",
+    "category": "Concepts",
+    "tags": [
+      "NLP",
+      "Transformers"
+    ],
+    "readTime": "1 min read",
+    "thumbnail": "",
+    "file": "",
+    "description": "Teaching machines to understand human language. NLP powers chatbots, translation, and voice assistants through tokenization, embeddings, and large language mode…",
+    "bodyHtml": "<p>Teaching machines to understand human language.</p>\n<p>NLP powers chatbots, translation, and voice assistants through tokenization, embeddings, and large language models.</p>\n<ul><li>Classical pipeline: tokenize → tag → parse → extract</li><li>Modern approach: pretrained transformer + fine-tuning</li></ul>"
+  },
+  {
+    "slug": "deep-learning",
+    "title": "Deep Learning, Briefly",
+    "date": "2024-11-07",
+    "category": "Concepts",
+    "tags": [
+      "Deep Learning",
+      "Neural Networks"
+    ],
+    "readTime": "1 min read",
+    "thumbnail": "",
+    "file": "",
+    "description": "Neural networks with many layers, inspired by the brain. Deep learning uses layered neural networks to learn complex patterns from large datasets. It excels at…",
+    "bodyHtml": "<p>Neural networks with many layers, inspired by the brain.</p>\n<p>Deep learning uses layered neural networks to learn complex patterns from large datasets. It excels at image recognition, natural language processing, and sequence modeling.</p>\n<ul><li>Convolutional networks: spatial data (images)</li><li>Recurrent / transformer networks: sequential data (text, audio)</li></ul>"
+  }
 ]

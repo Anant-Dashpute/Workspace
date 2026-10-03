@@ -1,46 +1,92 @@
 [
-    {
-        "slug": "attention-is-all-you-need",
-        "title": "Attention Is All You Need — Summary",
-        "date": "2024-09-12",
-        "category": "Research",
-        "tags": [
-            "NLP",
-            "Transformers"
-        ],
-        "readTime": "1 min read",
-        "thumbnail": "",
-        "file": "",
-        "description": "Summary notes on the Transformer architecture paper. Introduces an architecture based entirely on attention mechanisms, removing recurrence and convolutions.",
-        "bodyHtml": "<p>Summary notes on the Transformer architecture paper.</p>\n<p>Introduces the Transformer, an architecture based entirely on attention mechanisms, removing recurrence and convolutions entirely.</p>\n<ul><li>Self-attention lets the model weigh all positions in a sequence directly</li><li>Enabled the current generation of large language models</li></ul>"
-    },
-    {
-        "slug": "bert",
-        "title": "BERT — Summary",
-        "date": "2024-08-01",
-        "category": "Research",
-        "tags": [
-            "NLP",
-            "Pretraining"
-        ],
-        "readTime": "1 min read",
-        "thumbnail": "",
-        "file": "",
-        "description": "Summary notes on bidirectional transformer pretraining. BERT pretrains deep bidirectional representations, then fine-tunes for downstream tasks.",
-        "bodyHtml": "<p>Summary notes on bidirectional transformer pretraining.</p>\n<p>BERT pretrains deep bidirectional representations by jointly conditioning on left and right context in all layers, then fine-tunes for downstream tasks.</p>\n<ul><li>Masked language modeling as the pretraining objective</li><li>Strong results across many NLP benchmarks with minimal task-specific changes</li></ul>"
-    },
-    {
-        "slug": "alphago",
-        "title": "AlphaGo — Summary",
-        "date": "2024-07-15",
-        "category": "Research",
-        "tags": [
-            "Reinforcement Learning"
-        ],
-        "readTime": "1 min read",
-        "thumbnail": "",
-        "file": "",
-        "description": "Summary notes on mastering Go with deep neural networks and tree search, combining supervised learning with reinforcement learning from self-play.",
-        "bodyHtml": "<p>Summary notes on mastering Go with deep neural networks and tree search.</p>\n<p>Combines supervised learning from human games with reinforcement learning from self-play, guided by Monte Carlo tree search.</p>\n<ul><li>First program to beat a professional human Go player</li><li>Demonstrated RL + search as a powerful combination for hard search spaces</li></ul>"
-    }
+  {
+    "slug": "agents-and-ml",
+    "title": "A Survey on Large Language Model based Autonomous Agents",
+    "date": "2026-09-29",
+    "category": "Research",
+    "tags": [
+      "Agents",
+      "Machine Learning",
+      "LLM"
+    ],
+    "readTime": "1 min read",
+    "thumbnail": "",
+    "file": "",
+    "description": "Summary notes on how LLMs are used as the reasoning core of autonomous agents. Surveys agent architectures built around large language models, covering how they…",
+    "bodyHtml": "<p>Summary notes on how LLMs are used as the reasoning core of autonomous agents.</p>\n<p>Surveys agent architectures built around large language models, covering how they plan, use tools, and maintain memory to accomplish multi-step tasks without step-by-step human supervision.</p>\n<ul><li>Core components: profiling, memory, planning, and action modules</li><li>Planning strategies include reflection, task decomposition, and self-critique</li><li>Tool use lets agents call external APIs, search, and code execution environments</li></ul>"
+  },
+  {
+    "slug": "image-segmentation",
+    "title": "U-Net — Convolutional Networks for Image Segmentation",
+    "date": "2026-09-29",
+    "category": "Research",
+    "tags": [
+      "Computer Vision",
+      "Segmentation"
+    ],
+    "readTime": "1 min read",
+    "thumbnail": "",
+    "file": "",
+    "description": "Summary notes on the UNet encoderdecoder architecture for segmentation. UNet uses a contracting encoder path to capture context paired with a symmetric expandin…",
+    "bodyHtml": "<p>Summary notes on the U-Net encoder-decoder architecture for segmentation.</p>\n<p>U-Net uses a contracting encoder path to capture context paired with a symmetric expanding decoder path that enables precise localization, with skip connections linking corresponding encoder and decoder layers.</p>\n<ul><li>Skip connections preserve fine-grained spatial detail lost during downsampling</li><li>Trains effectively with very few annotated images via heavy data augmentation</li><li>Widely used beyond biomedical imaging, forming the basis for many segmentation models</li></ul>"
+  },
+  {
+    "slug": "statistical-learning",
+    "title": "The Elements of Statistical Learning — Summary",
+    "date": "2026-09-29",
+    "category": "Research",
+    "tags": [
+      "Statistics",
+      "Machine Learning"
+    ],
+    "readTime": "1 min read",
+    "thumbnail": "",
+    "file": "",
+    "description": "Summary notes on the statistical foundations underlying modern ML methods. Covers the biasvariance tradeoff, model selection, and regularization as core statist…",
+    "bodyHtml": "<p>Summary notes on the statistical foundations underlying modern ML methods.</p>\n<p>Covers the bias-variance tradeoff, model selection, and regularization as core statistical tools for building predictive models that generalize well beyond training data.</p>\n<ul><li>Bias-variance tradeoff explains overfitting and underfitting in model selection</li><li>Regularization (ridge, lasso) constrains model complexity to improve generalization</li><li>Cross-validation and bootstrap provide practical estimates of test error</li></ul>"
+  },
+  {
+    "slug": "attention-is-all-you-need",
+    "title": "Attention Is All You Need — Summary",
+    "date": "2024-09-12",
+    "category": "Research",
+    "tags": [
+      "NLP",
+      "Transformers"
+    ],
+    "readTime": "1 min read",
+    "thumbnail": "",
+    "file": "",
+    "description": "Summary notes on the Transformer architecture paper. Introduces the Transformer, an architecture based entirely on attention mechanisms, removing recurrence and…",
+    "bodyHtml": "<p>Summary notes on the Transformer architecture paper.</p>\n<p>Introduces the Transformer, an architecture based entirely on attention mechanisms, removing recurrence and convolutions entirely.</p>\n<ul><li>Self-attention lets the model weigh all positions in a sequence directly</li><li>Enabled the current generation of large language models</li></ul>"
+  },
+  {
+    "slug": "bert",
+    "title": "BERT — Summary",
+    "date": "2024-08-01",
+    "category": "Research",
+    "tags": [
+      "NLP",
+      "Pretraining"
+    ],
+    "readTime": "1 min read",
+    "thumbnail": "",
+    "file": "",
+    "description": "Summary notes on bidirectional transformer pretraining. BERT pretrains deep bidirectional representations by jointly conditioning on left and right context in a…",
+    "bodyHtml": "<p>Summary notes on bidirectional transformer pretraining.</p>\n<p>BERT pretrains deep bidirectional representations by jointly conditioning on left and right context in all layers, then fine-tunes for downstream tasks.</p>\n<ul><li>Masked language modeling as the pretraining objective</li><li>Strong results across many NLP benchmarks with minimal task-specific changes</li></ul>"
+  },
+  {
+    "slug": "alphago",
+    "title": "AlphaGo — Summary",
+    "date": "2024-07-15",
+    "category": "Research",
+    "tags": [
+      "Reinforcement Learning"
+    ],
+    "readTime": "1 min read",
+    "thumbnail": "",
+    "file": "",
+    "description": "Summary notes on mastering Go with deep neural networks and tree search. Combines supervised learning from human games with reinforcement learning from selfplay…",
+    "bodyHtml": "<p>Summary notes on mastering Go with deep neural networks and tree search.</p>\n<p>Combines supervised learning from human games with reinforcement learning from self-play, guided by Monte Carlo tree search.</p>\n<ul><li>First program to beat a professional human Go player</li><li>Demonstrated RL + search as a powerful combination for hard search spaces</li></ul>"
+  }
 ]
