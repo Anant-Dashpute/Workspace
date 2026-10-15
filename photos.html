@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photos — Anant Dashpute</title>
+    <meta name="description" content="Browse Anant Dashpute's photo timeline, grouped by year." />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#0a0a0b" />
+    <link rel="apple-touch-icon" href="logo.jpg" />
+    <link rel="icon" href="logo.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="src/styles/main.css" />
+</head>
+
+<body>
+    <header id="app-header"></header>
+
+    <main class="page">
+        <section class="photos-page-intro" aria-labelledby="photos-page-title">
+            <span class="photo-kicker">MOMENTS &amp; MILESTONES</span>
+            <h1 class="section-title" id="photos-page-title">Photos</h1>
+            <p class="section-text">Browse photos by year. Swipe, scroll, or use the arrows to move through each gallery.</p>
+        </section>
+        <div id="photo-gallery" data-page="photos"></div>
+    </main>
+
+    <footer id="app-footer"></footer>
+
+    <script type="module" src="src/pages/photos-page.js"></script>
+</body>
+
+</html>

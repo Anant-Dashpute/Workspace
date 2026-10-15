@@ -92,6 +92,7 @@ export function renderAbout() {
       <h2 class="section-title">Contact</h2>
       <p class="section-text">
         Reach me at <a href="mailto:${profile.contact.email}">${profile.contact.email}</a>
+        &middot; <a href="tel:${profile.contact.phone.replace(/\s/g, "")}">${profile.contact.phone}</a>
         &middot; ${profile.contact.location}
       </p>
     </section>

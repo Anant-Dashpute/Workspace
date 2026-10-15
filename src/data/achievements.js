@@ -1,9 +1,14 @@
 // Notable achievements — shown as cards in the About section.
 export const achievements = [
     {
-        title: "Process Innovation Award 2024",
-        description: "Awarded by the MBRDI IP & Innovation Management Team at Mercedes-Benz Research and Development India for \"Automatic Head Unit Video Analysis for Parking Functions\" — automating video analysis of the vehicle's head unit during parking maneuvers to streamline ADAS testing and verification.",
+        title: "Process Innovation with Impact Award",
+        description: "Recognized at Mercedes-Benz Research and Development India for automating head-unit video analysis for parking functions, streamlining ADAS testing and verification.",
         date: "2024",
+    },
+    {
+        title: "Bronze Star Award",
+        description: "Recognized for leading breaking-event recompute analysis in Tableau at Mercedes-Benz Research and Development India.",
+        date: "MBRDI · Tableau recompute analysis",
     },
     {
         title: "Published in SAE Technical Paper Series",

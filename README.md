@@ -7,16 +7,18 @@ A minimal personal knowledge hub: About Me, Notes repository, Links, Blogs, Conc
 - **Content = Markdown + frontmatter**, one file per item, under `content/<collection>/*.md`.
 - **`scripts/build-content.mjs`** (zero dependencies) compiles every collection into `content/generated/<collection>.json` — parsing frontmatter, converting the Markdown body to HTML, and computing a plain-text excerpt.
 - The frontend (`src/pages/*.js`) fetches the generated JSON once per page and renders cards client-side. No per-item network requests, no sequential file probing.
-- Structured, non-prose data (nav, links, profile, timeline, achievements, certifications) stays in `src/data/*.js` — it's short, changes rarely, and doesn't benefit from Markdown.
+- Structured, non-prose data (nav, links, profile, timeline, photos, achievements, certifications) stays in `src/data/*.js` — it's short, changes rarely, and doesn't benefit from Markdown.
 - **Content creation workflow: plain Git.** Add a `.md` file (or edit a `src/data/*.js` entry), commit, push. No login, no OAuth app, no browser-based CMS — a single-owner static site doesn't need write-access infrastructure, and every extra moving part there would be pure attack surface for zero benefit.
 
 ## Project structure
 
 ```
 index.html               About Me (home page)
+photos.html                Year-grouped photo timeline
 notes.html                 Notes repository
 links.html                  Social / external links
 blogs.html / concepts.html / research-papers.html / projects.html   Content collections
+photos/<year>/              Photo timeline images
 
 manifest.json             PWA manifest (uses logo.jpg as icon)
 service-worker.js         Offline caching (cache-first for assets, network-first for data)
@@ -38,7 +40,7 @@ package.json                 `npm run build` runs the script above
 
 src/
 ├── components/           Shared UI: navbar, footer
-├── sections/              Page sections: hero, about, notes grid, links grid
+├── sections/              Page sections: hero, about, photo timeline, notes grid, links grid
 ├── pages/                 Per-page entry scripts (one <script type="module"> per HTML page)
 ├── data/                  Structured metadata (profile, timeline, links, nav, achievements, certifications)
 ├── utils/                 Small helpers (DOM, icons, service worker registration)
@@ -66,6 +68,8 @@ More detail in Markdown — **bold**, *italic*, `code`, [links](https://example.
 Commit and push. GitHub Actions runs `node scripts/build-content.mjs` before every deploy, so no local build step is required — though `npm run build` works locally too (Node 18+) if you want to preview the generated JSON.
 
 **Profile, timeline, achievements, certifications, links, nav:** edit the corresponding file in `src/data/*.js` directly — these are short, structured, and don't need a Markdown file per entry.
+
+**Photos:** place images in `photos/<year>/` and add their year, relative path, and caption to `src/data/photos.js`. The home page and Photos page share the same swipeable, year-by-year galleries.
 
 Notes support Search + category filter + inline preview (via `<details>`, no extra JS) + PDF download, all driven by `content/generated/notes.json`.
 

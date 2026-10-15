@@ -16,6 +16,7 @@ export function renderHero() {
         ${linkedin ? `<a class="btn btn-primary" href="${linkedin.url}" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>` : ""}
         <a class="btn btn-secondary" href="notes.html">View Notes</a>
         <a class="btn btn-secondary" href="#publications-section">Publications</a>
+        <a class="btn btn-secondary" href="docs/Anant_Dashpute_Resume.pdf" download>Download Resume</a>
         <a class="btn btn-secondary" href="#contact">Contact</a>
     </div>
   `;

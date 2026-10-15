@@ -2,6 +2,7 @@
 export const navItems = [
     { label: "About", href: "index.html", id: "home" },
     { label: "My Projects", href: "projects.html", id: "projects" },
+    { label: "Photos", href: "photos.html", id: "photos" },
     { label: "Notes", href: "notes.html", id: "notes" },
     { label: "Blogs", href: "blogs.html", id: "blogs" },
     { label: "Concepts", href: "concepts.html", id: "concepts" },
